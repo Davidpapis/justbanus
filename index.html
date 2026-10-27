@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Banús | Your Marbella Home. Taken care of.</title>
+  
+  <meta name="description" content="JUST BANUS · Property Management & Owner Services. Dedicados en exclusiva al cuidado, gestión y mantenimiento de propiedades privadas en Marbella y Puerto Banús.">
+  <meta name="keywords" content="just banus, property management marbella, puerto banus property care, serinamar group">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://justbanus.com/">
+
+  <link rel="preload" as="image" href="assets/puerto-banus-marina-hero.webp">
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=8.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Just Banús",
+    "url": "https://justbanus.com/",
+    "logo": "https://justbanus.com/wp-content/uploads/2022/06/JUST-logo-300.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Urb. Los Naranjos de Marbella, C.C. Local 5",
+      "addressLocality": "Nueva Andalucía, Marbella",
+      "postalCode": "29660",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34952813362"
+  }
+  </script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main-content">Ir al contenido / Skip to content</a>
+
+    <!-- Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        
+        <a href="index.html" class="logo-wrapper">
+          <img src="assets/just-logo-300.png" width="300" height="314" alt="Just Banús Logo">
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Inicio</a></li>
+          <li class="nav-item-dropdown">
+            <a href="servicios.html" class="nav-link" data-i18n="nav_services">Servicios ▾</a>
+                        <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="servicios.html" data-i18n="dropdown_all"><strong>Todos los servicios</strong></a></li>
+              <li class="dropdown-item"><a href="servicios.html#administrative" data-i18n="dropdown_admin">Gestión administrativa</a></li>
+              <li class="dropdown-item"><a href="servicios-maintenance-service.html" data-i18n="dropdown_maint">Mantenimiento técnico</a></li>
+              <li class="dropdown-item"><a href="servicios-home-staging.html" data-i18n="dropdown_reforms">Reformas y Decoración</a></li>
+              <li class="dropdown-item"><a href="servicios-limpieza.html" data-i18n="dropdown_housekeeping">Limpieza y puesta a punto</a></li>
+              <li class="dropdown-item"><a href="servicios-storage-rooms.html" data-i18n="dropdown_storage">Trasteros Privados</a></li>
+              <li class="dropdown-item"><a href="servicios-more-services.html" data-i18n="dropdown_more">Otros Servicios y Concierge</a></li>
+            </ul>
+          </li>
+          <li><a href="propietarios.html" class="nav-link" data-i18n="nav_owners">Propietarios</a></li>
+          <li><a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')" aria-label="Español" title="Español">
+              <img src="assets/flag-es.svg" alt="Español" class="flag-icon">
+            </button>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" aria-label="English" title="English">
+              <img src="assets/flag-en.svg" alt="English" class="flag-icon">
+            </button>
+          </div>
+
+          <a href="https://serinamar.com" class="btn-sales-rentals" target="_blank" rel="noopener">
+            SALES & RENTALS
+          </a>
+
+          <button class="btn-primary" onclick="openModal()" data-i18n="nav_btn_contact">
+            Contactar
+          </button>
+
+          <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+        <div id="mobile-navigation" class="mobile-drawer" hidden>
+      <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
+      <a href="servicios.html" class="nav-link" data-i18n="nav_services">Servicios</a>
+      <a href="propietarios.html" class="nav-link" data-i18n="nav_owners">Propietarios</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a>
+      <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
+      <a href="https://serinamar.com" target="_blank" rel="noopener" class="nav-link" style="color: var(--primary-blue); font-weight: 700;">SALES & RENTALS</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="jb-hero-section" aria-labelledby="home-title">
+      <div class="jb-hero-bg" aria-hidden="true"></div>
+      <div class="jb-hero-overlay" aria-hidden="true"></div>
+      <div class="jb-hero-container">
+        <div class="jb-hero-text-wrap">
+          <p class="jb-hero-eyebrow" data-i18n="home_hero_eyebrow">Puerto Banús · Marbella</p>
+          <h1 id="home-title" class="jb-hero-title" data-i18n="refresh_hero_title">Tu hogar en Marbella.<br><span>Cuidado al detalle.</span></h1>
+          <p class="jb-hero-subtitle" data-i18n="refresh_hero_sub">Cuidamos de tu propiedad, estés donde estés. Tú solo tienes que llegar y disfrutar.</p>
+          <div class="jb-hero-actions">
+            <a href="contacto.html" class="btn-jb-primary" data-i18n="refresh_hero_cta">Hablemos de tu propiedad</a>
+            <a href="#services-overview" class="btn-jb-secondary" data-i18n="btn_our_services">Nuestros servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>JUST BANÚS · PROPERTY MANAGEMENT</span><a href="#services-overview" data-i18n="refresh_explore">Descubre cómo te ayudamos</a></div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-grid">
+        <p data-i18n="refresh_trust_local"><strong>Cerca de tu hogar</strong><span>Equipo local en Marbella</span></p>
+        <p data-i18n="refresh_trust_care"><strong>Todo, en buenas manos</strong><span>Un contacto para tu propiedad</span></p>
+        <p data-i18n="refresh_trust_group"><strong>Parte de Serinamar Group</strong><span>Atención en español e inglés</span></p>
+      </div>
+    </div>
+
+    <section id="services-overview" class="section-padding">
+      <div class="container">
+        <div class="section-heading-row" data-reveal>
+          <div><span class="badge-tag" data-i18n="home_services_badge">Nuestros servicios</span><h2 class="section-title" data-i18n="refresh_services_title">Una casa cuidada.<br>Una preocupación menos.</h2></div>
+          <p class="section-subtitle" data-i18n="refresh_services_sub">Desde el mantenimiento diario hasta preparar tu próxima estancia. Nos ocupamos de cada detalle.</p>
+        </div>
+        <div class="photo-services">
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios.html#administrative" tabindex="-1" aria-hidden="true"><img src="assets/optimized/staging_livingroom.jpg" alt="" width="1376" height="768" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">01 /</span><h3 data-i18n="refresh_service_1">Gestión administrativa</h3><p data-i18n="refresh_service_1_desc">Documentación, suministros y coordinación para tenerlo todo al día.</p><a class="section-link" href="servicios.html#administrative" data-i18n="refresh_service_link_1">Explorar gestión</a></div>
+          </article>
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios-maintenance-service.html" tabindex="-1" aria-hidden="true"><img src="assets/care-maintenance.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">02 /</span><h3 data-i18n="refresh_service_2">Mantenimiento técnico</h3><p data-i18n="refresh_service_2_desc">Revisiones, reparaciones y cuidado preventivo durante todo el año.</p><a class="section-link" href="servicios-maintenance-service.html" data-i18n="refresh_service_link_2">Explorar mantenimiento</a></div>
+          </article>
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios-home-staging.html" tabindex="-1" aria-hidden="true"><img src="assets/optimized/staging_bathroom.jpg" alt="" width="1376" height="768" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">03 /</span><h3 data-i18n="refresh_service_3">Reformas y decoración</h3><p data-i18n="refresh_service_3_desc">Espacios pensados para vivir mejor, desde el primer detalle al acabado final.</p><a class="section-link" href="servicios-home-staging.html" data-i18n="refresh_service_link_3">Explorar reformas</a></div>
+          </article>
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios-limpieza.html" tabindex="-1" aria-hidden="true"><img src="assets/optimized/cleaning.jpg" alt="" width="1376" height="768" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">04 /</span><h3 data-i18n="refresh_service_4">Limpieza y puesta a punto</h3><p data-i18n="refresh_service_4_desc">Una vivienda limpia, preparada y lista para recibirte.</p><a class="section-link" href="servicios-limpieza.html" data-i18n="refresh_service_link_4">Explorar limpieza</a></div>
+          </article>
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios-storage-rooms.html" tabindex="-1" aria-hidden="true"><img src="assets/optimized/storage_rooms.jpg" alt="" width="1376" height="768" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">05 /</span><h3 data-i18n="refresh_service_5">Trasteros y custodia</h3><p data-i18n="refresh_service_5_desc">Espacio para tus pertenencias y custodia de llaves en Los Naranjos.</p><a class="section-link" href="servicios-storage-rooms.html" data-i18n="refresh_service_link_5">Explorar trasteros</a></div>
+          </article>
+          <article class="photo-service" data-reveal>
+            <a class="photo-service-media" href="servicios-more-services.html" tabindex="-1" aria-hidden="true"><img src="assets/optimized/hero.jpg" alt="" width="1376" height="768" loading="lazy" decoding="async"></a>
+            <div class="photo-service-body"><span class="service-number">06 /</span><h3 data-i18n="refresh_service_6">Concierge y atención personal</h3><p data-i18n="refresh_service_6_desc">Traslados, preparativos y esos pequeños detalles que hacen tu estancia más fácil.</p><a class="section-link" href="servicios-more-services.html" data-i18n="refresh_service_link_6">Explorar concierge</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-banner arrival-banner" aria-labelledby="arrival-title">
+      <img src="assets/optimized/hero.jpg" alt="Terraza mediterránea con vistas al puerto al atardecer" width="1376" height="768" loading="lazy" decoding="async">
+      <div class="container photo-banner-content" data-reveal>
+        <span class="badge-tag" data-i18n="refresh_arrival_badge">Tu tiempo, para disfrutar</span>
+        <h2 id="arrival-title" data-i18n="refresh_arrival_title">Llegar a Marbella.<br>Encontrarlo todo listo.</h2>
+        <p data-i18n="refresh_arrival_sub">La tranquilidad de saber que alguien se ha ocupado de todo antes de tu llegada.</p>
+        <a href="propietarios.html" class="btn-jb-primary" data-i18n="refresh_arrival_cta">Descubre el cuidado para propietarios</a>
+      </div>
+    </section>
+
+    <section class="section-padding soft-section">
+      <div class="container editorial-split">
+        <div class="editorial-photo" data-reveal><img src="assets/optimized/villa.jpg" alt="Vivienda mediterránea con piscina y jardín" width="1376" height="768" loading="lazy" decoding="async"><div class="photo-caption" data-i18n="refresh_local_caption">Marbella · Puerto Banús · Nueva Andalucía</div></div>
+        <div class="editorial-copy" data-reveal>
+          <span class="badge-tag" data-i18n="refresh_local_badge">Atención cercana, estés donde estés</span>
+          <h2 class="section-title" data-i18n="refresh_local_title">Tu tranquilidad empieza con alguien de confianza.</h2>
+          <p data-i18n="refresh_local_text">Somos Just Banús, parte de Serinamar Group. Desde nuestra oficina en Los Naranjos de Marbella, coordinamos el cuidado de tu hogar con atención personal y conocimiento de la zona.</p>
+          <ul class="check-list"><li data-i18n="refresh_local_1">Un contacto para coordinar lo que necesitas.</li><li data-i18n="refresh_local_2">Cuidado de la vivienda durante tus ausencias.</li><li data-i18n="refresh_local_3">Preparación para tu próxima estancia.</li></ul>
+          <a href="nosotros.html" class="section-link" data-i18n="refresh_local_cta">Conoce Just Banús</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header" data-reveal><span class="badge-tag" data-i18n="refresh_process_badge">Así de sencillo</span><h2 class="section-title" data-i18n="refresh_process_title">Nos cuentas. Lo coordinamos. Disfrutas.</h2></div>
+        <div class="process-grid">
+          <article class="process-step" data-reveal><span class="process-number">01</span><h3 data-i18n="refresh_step1_title">Hablamos de tu hogar</h3><p data-i18n="refresh_step1_desc">Conocemos tu propiedad, tus planes y lo que necesitas.</p></article>
+          <article class="process-step" data-reveal><span class="process-number">02</span><h3 data-i18n="refresh_step2_title">Preparamos tu propuesta</h3><p data-i18n="refresh_step2_desc">Acordamos los servicios y la frecuencia que encajan contigo.</p></article>
+          <article class="process-step" data-reveal><span class="process-number">03</span><h3 data-i18n="refresh_step3_title">Nos ocupamos del cuidado</h3><p data-i18n="refresh_step3_desc">Coordinamos cada tarea y mantenemos el contacto contigo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-banner">
+      <div class="container contact-banner-inner" data-reveal>
+        <div><span class="badge-tag" data-i18n="refresh_contact_badge">Empecemos por una conversación</span><h2 data-i18n="refresh_contact_title">¿Qué necesita tu propiedad?</h2><p data-i18n="refresh_contact_sub">Cuéntanos cómo podemos ayudarte. Estamos aquí, en Marbella.</p></div>
+        <a href="contacto.html" class="btn-white" data-i18n="refresh_contact_cta">Hablar con Just Banús</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/just-logo-300.png" width="300" height="314" alt="Just Banús Logo" style="height: 44px; margin-bottom: 1rem;">
+          <p data-i18n="footer_desc"><strong>JUST BANUS · Property Management & Owner Services</strong><br>Parte de Serinamar Group. Dedicados en exclusiva al cuidado, gestión y mantenimiento de propiedades privadas en Marbella y Puerto Banús.</p>
+          <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+            <div data-i18n="footer_address">Urb. Los Naranjos de Marbella, C.C. Local 5, 29660 Marbella</div>
+            <div data-i18n="footer_phones">+34 952 813 362 / +34 649 743 685</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;" data-i18n="footer_services">Servicios</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="servicios.html" data-i18n="footer_s1">Gestión Administrativa</a></li>
+            <li><a href="servicios-maintenance-service.html" data-i18n="footer_s2">Mantenimiento Técnico</a></li>
+            <li><a href="servicios-home-staging.html" data-i18n="footer_s3">Reformas y Decoración</a></li>
+            <li><a href="servicios.html" data-i18n="footer_s4">Limpieza y Puesta a Punto</a></li>
+            <li><a href="servicios-storage-rooms.html" data-i18n="footer_s5">Trasteros Privados</a></li>
+            <li><a href="servicios-more-services.html" data-i18n="footer_s6">Otros Servicios y Concierge</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;" data-i18n="footer_pages">Páginas</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="index.html" data-i18n="footer_p1">Inicio</a></li>
+            <li><a href="propietarios.html" data-i18n="footer_p2">Propietarios</a></li>
+            <li><a href="servicios.html" data-i18n="footer_p3">Servicios</a></li>
+            <li><a href="nosotros.html" data-i18n="footer_p4">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" data-i18n="footer_p5">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;" data-i18n="footer_help">Ayuda</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="faq.html" data-i18n="footer_h1">Preguntas Frecuentes (FAQ)</a></li>
+            <li><a href="contacto.html" data-i18n="footer_h2">Aviso Legal</a></li>
+            <li><a href="contacto.html" data-i18n="footer_h3">Política de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">© 2026 Just Banús · Serinamar Group. Todos los derechos reservados. Marbella, Costa del Sol.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js?v=4.1"></script>
+  <script src="home-i18n.js?v=1.1"></script>
+  <script src="script.js?v=8.1"></script>
+</body>
+</html>
