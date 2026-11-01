@@ -719,3 +719,61 @@ const i18n = {
     sub_more_btn: "Request Information on Other Services"
   }
 };
+
+/* Shared Serinamar Group Navigation & Footer keys across all pages */
+Object.assign(i18n.en, {
+  topbar_vision: 'Three specialised companies. One vision.',
+  wa_quick_chat: 'WhatsApp · Online',
+  topbar_holiday: 'Holiday Rentals (Naranjos de Marbella) ↗',
+  nav_home: 'HOME',
+  nav_prop_mgmt: 'PROPERTY MANAGEMENT',
+  nav_cleaning: 'CLEANING & LAUNDRY',
+  nav_maintenance: 'MAINTENANCE',
+  nav_refurbishment: 'REFURBISHMENT',
+  nav_holiday_rentals: 'HOLIDAY RENTALS ↗',
+  nav_about: 'ABOUT US',
+  nav_contact: 'CONTACT',
+  nav_faq: 'FAQ',
+  nav_btn_request: 'REQUEST A SERVICE',
+  nav_btn_contact: 'REQUEST A SERVICE',
+  footer_group_title: 'Part of Serinamar Group',
+  footer_group_vision: 'Three specialised companies. One vision.',
+  footer_comp_serinamar: 'Real Estate & Hospitality',
+  footer_comp_iberiansun: 'Owner Rental Partnerships',
+  footer_comp_justbanus: 'Property Management & Property Services',
+  footer_desc: '<strong>JUST BANUS · Property Management &amp; Property Services</strong><br>Your property. Our responsibility. Practical property management, cleaning &amp; laundry, maintenance and refurbishment in Marbella.',
+  footer_services: 'Property Services',
+  footer_pages: 'Navigation',
+  footer_group_col: 'Serinamar Group',
+  footer_s5: 'Storage & Key Holding',
+  footer_rights: '© 2026 Just Banús · Part of Serinamar Group. All rights reserved. Marbella, Costa del Sol.'
+});
+
+Object.assign(i18n.es, {
+  topbar_vision: 'Tres empresas especializadas. Una misma visión.',
+  wa_quick_chat: 'WhatsApp · En línea',
+  topbar_holiday: 'Holiday Rentals · Alquiler Vacacional (Naranjos de Marbella) ↗',
+  nav_home: 'INICIO',
+  nav_prop_mgmt: 'GESTIÓN DE PROPIEDAD',
+  nav_cleaning: 'LIMPIEZA Y LAVANDERÍA',
+  nav_maintenance: 'MANTENIMIENTO',
+  nav_refurbishment: 'REFORMAS',
+  nav_holiday_rentals: 'HOLIDAY RENTALS ↗',
+  nav_about: 'NOSOTROS',
+  nav_contact: 'CONTACTO',
+  nav_faq: 'FAQ',
+  nav_btn_request: 'SOLICITAR UN SERVICIO',
+  nav_btn_contact: 'SOLICITAR UN SERVICIO',
+  footer_group_title: 'Parte de Serinamar Group',
+  footer_group_vision: 'Tres empresas especializadas. Una misma visión.',
+  footer_comp_serinamar: 'Real Estate & Hospitality',
+  footer_comp_iberiansun: 'Owner Rental Partnerships',
+  footer_comp_justbanus: 'Property Management & Property Services',
+  footer_desc: '<strong>JUST BANUS · Property Management &amp; Property Services</strong><br>Tu propiedad. Nuestra responsabilidad. Gestión práctica de propiedades, limpieza y lavandería, mantenimiento y reformas en Marbella.',
+  footer_services: 'Servicios a la Propiedad',
+  footer_pages: 'Navegación',
+  footer_group_col: 'Serinamar Group',
+  footer_s5: 'Trasteros y Custodia de Llaves',
+  footer_rights: '© 2026 Just Banús · Parte de Serinamar Group. Todos los derechos reservados. Marbella, Costa del Sol.'
+});
+

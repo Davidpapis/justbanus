@@ -14,73 +14,79 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8.0">
+  <link rel="stylesheet" href="styles.css?v=9.0">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Ir al contenido / Skip to content</a>
 
-    <!-- Navigation Header -->
+        <!-- Navigation Header -->
   <header>
-    <nav class="navbar">
-      <div class="container nav-container">
-        
-        <a href="index.html" class="logo-wrapper">
-          <img src="assets/just-logo-300.png" width="300" height="314" alt="Just Banús Logo">
-        </a>
-
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a></li>
-          <li class="nav-item-dropdown">
-            <a href="servicios.html" class="nav-link active" data-i18n="nav_services">Servicios ▾</a>
-                        <ul class="dropdown-menu">
-              <li class="dropdown-item"><a href="servicios.html" data-i18n="dropdown_all"><strong>Todos los servicios</strong></a></li>
-              <li class="dropdown-item"><a href="servicios.html#administrative" data-i18n="dropdown_admin">Gestión administrativa</a></li>
-              <li class="dropdown-item"><a href="servicios-maintenance-service.html" data-i18n="dropdown_maint">Mantenimiento técnico</a></li>
-              <li class="dropdown-item"><a href="servicios-home-staging.html" data-i18n="dropdown_reforms">Reformas y Decoración</a></li>
-              <li class="dropdown-item"><a href="servicios-limpieza.html" data-i18n="dropdown_housekeeping">Limpieza y puesta a punto</a></li>
-              <li class="dropdown-item"><a href="servicios-storage-rooms.html" data-i18n="dropdown_storage">Trasteros Privados</a></li>
-              <li class="dropdown-item"><a href="servicios-more-services.html" data-i18n="dropdown_more">Otros Servicios y Concierge</a></li>
-            </ul>
-          </li>
-          <li><a href="propietarios.html" class="nav-link" data-i18n="nav_owners">Propietarios</a></li>
-          <li><a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
-          <li><a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
-          <li><a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a></li>
-        </ul>
-
-        <div class="nav-actions">
-          <div class="lang-toggle">
-            <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')" aria-label="Español" title="Español">
-              <img src="assets/flag-es.svg" alt="Español" class="flag-icon">
-            </button>
-            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" aria-label="English" title="English">
-              <img src="assets/flag-en.svg" alt="English" class="flag-icon">
-            </button>
+    <div class="site-header-wrap">
+      <div class="group-topbar">
+        <div class="group-topbar-inner">
+          <div class="group-topbar-badge">
+            <strong>SERINAMAR GROUP</strong>
+            <span data-i18n="topbar_vision">Three specialised companies. One vision.</span>
           </div>
+          <div class="group-topbar-links">
+            <a href="https://serinamar.com" target="_blank" rel="noopener">Serinamar · Real Estate &amp; Hospitality</a>
+            <span class="topbar-divider" aria-hidden="true">|</span>
+            <a href="index.html#owner-consultation">Iberiansun · Owner Partnerships</a>
+            <span class="topbar-divider" aria-hidden="true">|</span>
+            <a href="https://naranjosdemarbella.com" target="_blank" rel="noopener" class="topbar-holiday-link" data-i18n="topbar_holiday">Holiday Rentals (Naranjos de Marbella) ↗</a>
+          </div>
+        </div>
+      </div>
 
-          <a href="https://serinamar.com" class="btn-sales-rentals" target="_blank" rel="noopener">
-            SALES & RENTALS
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="nav-container">
+          <a href="index.html" class="logo-wrapper" aria-label="Just Banús — Property Management Marbella">
+            <img src="assets/jb-logo-nobg.png" width="226" height="105" alt="Just Banús Property Management Marbella Logo">
           </a>
 
-          <button class="btn-primary" onclick="openModal()" data-i18n="nav_btn_contact">
-            Contactar
-          </button>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">HOME</a></li>
+            <li><a href="propietarios.html" class="nav-link" data-i18n="nav_prop_mgmt">PROPERTY MANAGEMENT</a></li>
+            <li><a href="servicios-limpieza.html" class="nav-link" data-i18n="nav_cleaning">CLEANING &amp; LAUNDRY</a></li>
+            <li><a href="servicios-maintenance-service.html" class="nav-link" data-i18n="nav_maintenance">MAINTENANCE</a></li>
+            <li><a href="servicios-home-staging.html" class="nav-link" data-i18n="nav_refurbishment">REFURBISHMENT</a></li>
+            <li><a href="nosotros.html" class="nav-link" data-i18n="nav_about">ABOUT US</a></li>
+            <li><a href="contacto.html" class="nav-link" data-i18n="nav_contact">CONTACT</a></li>
+          </ul>
 
-          <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="nav-actions">
+            <div class="lang-toggle" role="group" aria-label="Language selector">
+              <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')" aria-label="English" title="English">
+                <img src="assets/flag-en.svg" alt="English" class="flag-icon">
+              </button>
+              <button class="lang-btn" data-lang="es" onclick="setLanguage('es')" aria-label="Español" title="Español">
+                <img src="assets/flag-es.svg" alt="Español" class="flag-icon">
+              </button>
+            </div>
+
+            <a href="contacto.html" class="btn-primary" data-i18n="nav_btn_request">
+              REQUEST A SERVICE
+            </a>
+
+            <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+          </div>
         </div>
-
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- Mobile Drawer Navigation -->
-        <div id="mobile-navigation" class="mobile-drawer" hidden>
-      <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
-      <a href="servicios.html" class="nav-link" data-i18n="nav_services">Servicios</a>
-      <a href="propietarios.html" class="nav-link" data-i18n="nav_owners">Propietarios</a>
-      <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
-      <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a>
-      <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
-      <a href="https://serinamar.com" target="_blank" rel="noopener" class="nav-link" style="color: var(--primary-blue); font-weight: 700;">SALES & RENTALS</a>
+    <div id="mobile-navigation" class="mobile-drawer" hidden>
+      <a href="index.html" class="nav-link" data-i18n="nav_home">HOME</a>
+      <a href="propietarios.html" class="nav-link" data-i18n="nav_prop_mgmt">PROPERTY MANAGEMENT</a>
+      <a href="servicios-limpieza.html" class="nav-link" data-i18n="nav_cleaning">CLEANING &amp; LAUNDRY</a>
+      <a href="servicios-maintenance-service.html" class="nav-link" data-i18n="nav_maintenance">MAINTENANCE</a>
+      <a href="servicios-home-staging.html" class="nav-link" data-i18n="nav_refurbishment">REFURBISHMENT</a>
+      <a href="https://naranjosdemarbella.com" target="_blank" rel="noopener" class="nav-link" style="color: var(--primary-gold); font-weight: 700;" data-i18n="topbar_holiday">Holiday Rentals (Naranjos de Marbella) ↗</a>
+      <a href="nosotros.html" class="nav-link" data-i18n="nav_about">ABOUT US</a>
+      <a href="contacto.html" class="nav-link" data-i18n="nav_contact">CONTACT</a>
+      <a href="contacto.html" class="btn-primary" style="margin-top: 14px; width: 100%;" data-i18n="nav_btn_request">REQUEST A SERVICE</a>
     </div>
   </header>
 
@@ -140,59 +146,107 @@
 
   </main>
 
-  <!-- Footer -->
+    <!-- COMMON SERINAMAR GROUP FOOTER -->
   <footer class="footer">
     <div class="container">
+      <!-- Part of Serinamar Group Banner -->
+      <div class="footer-group-banner">
+        <div class="footer-group-header">
+          <h3 data-i18n="footer_group_title">Part of Serinamar Group</h3>
+          <p data-i18n="footer_group_vision">Three specialised companies. One vision.</p>
+        </div>
+        <div class="footer-group-companies">
+          <a href="https://serinamar.com" target="_blank" rel="noopener" class="footer-company-item">
+            <strong>Serinamar</strong>
+            <span data-i18n="footer_comp_serinamar">Real Estate &amp; Hospitality</span>
+          </a>
+          <a href="index.html#owner-consultation" class="footer-company-item">
+            <strong>Iberiansun</strong>
+            <span data-i18n="footer_comp_iberiansun">Owner Rental Partnerships</span>
+          </a>
+          <a href="index.html" class="footer-company-item">
+            <strong>Just Banus</strong>
+            <span data-i18n="footer_comp_justbanus">Property Management &amp; Property Services</span>
+          </a>
+        </div>
+      </div>
+
       <div class="footer-grid">
         <div>
-          <img src="assets/just-logo-300.png" width="300" height="314" alt="Just Banús Logo" style="height: 44px; margin-bottom: 1rem;">
-          <p data-i18n="footer_desc"><strong>JUST BANUS · Property Management & Owner Services</strong><br>Parte de Serinamar Group. Dedicados en exclusiva al cuidado, gestión y mantenimiento de propiedades privadas en Marbella y Puerto Banús.</p>
-          <div style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+          <img src="assets/jb-logo-nobg.png" width="226" height="105" alt="Just Banús Logo" class="footer-logo-img">
+          <p data-i18n="footer_desc">
+            <strong>JUST BANUS · Property Management &amp; Property Services</strong><br>
+            Your property. Our responsibility. Practical property management, cleaning &amp; laundry, maintenance and refurbishment in Marbella.
+          </p>
+          <div style="margin-top: 1.15rem; font-size: 0.82rem; color: var(--text-muted);">
             <div data-i18n="footer_address">Urb. Los Naranjos de Marbella, C.C. Local 5, 29660 Marbella</div>
             <div data-i18n="footer_phones">+34 952 813 362 / +34 649 743 685</div>
           </div>
         </div>
 
         <div>
-          <h4 style="margin-bottom: 1rem;" data-i18n="footer_services">Servicios</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="servicios.html" data-i18n="footer_s1">Gestión Administrativa</a></li>
-            <li><a href="servicios-maintenance-service.html" data-i18n="footer_s2">Mantenimiento Técnico</a></li>
-            <li><a href="servicios-home-staging.html" data-i18n="footer_s3">Reformas y Decoración</a></li>
-            <li><a href="servicios.html" data-i18n="footer_s4">Limpieza y Puesta a Punto</a></li>
-            <li><a href="servicios-storage-rooms.html" data-i18n="footer_s5">Trasteros Privados</a></li>
-            <li><a href="servicios-more-services.html" data-i18n="footer_s6">Otros Servicios y Concierge</a></li>
+          <h4 data-i18n="footer_services">Property Services</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.55rem;">
+            <li><a href="propietarios.html" data-i18n="nav_prop_mgmt">Property Management</a></li>
+            <li><a href="servicios-limpieza.html" data-i18n="nav_cleaning">Cleaning &amp; Laundry</a></li>
+            <li><a href="servicios-maintenance-service.html" data-i18n="nav_maintenance">Maintenance</a></li>
+            <li><a href="servicios-home-staging.html" data-i18n="nav_refurbishment">Refurbishment</a></li>
+            <li><a href="servicios-storage-rooms.html" data-i18n="footer_s5">Storage &amp; Key Holding</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="margin-bottom: 1rem;" data-i18n="footer_pages">Páginas</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="index.html" data-i18n="footer_p1">Inicio</a></li>
-            <li><a href="propietarios.html" data-i18n="footer_p2">Propietarios</a></li>
-            <li><a href="servicios.html" data-i18n="footer_p3">Servicios</a></li>
-            <li><a href="nosotros.html" data-i18n="footer_p4">Sobre Nosotros</a></li>
-            <li><a href="contacto.html" data-i18n="footer_p5">Contacto</a></li>
+          <h4 data-i18n="footer_pages">Navigation</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.55rem;">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            
+            <li><a href="nosotros.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="contacto.html" data-i18n="nav_contact">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="margin-bottom: 1rem;" data-i18n="footer_help">Ayuda</h4>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="faq.html" data-i18n="footer_h1">Preguntas Frecuentes (FAQ)</a></li>
-            <li><a href="contacto.html" data-i18n="footer_h2">Aviso Legal</a></li>
-            <li><a href="contacto.html" data-i18n="footer_h3">Política de Privacidad</a></li>
+          <h4 data-i18n="footer_group_col">Serinamar Group</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.55rem;">
+            <li><a href="https://serinamar.com" target="_blank" rel="noopener">Serinamar · Real Estate &amp; Hospitality ↗</a></li>
+            <li><a href="https://naranjosdemarbella.com" target="_blank" rel="noopener">Naranjos de Marbella · Holiday Rentals ↗</a></li>
+            <li><a href="index.html#owner-consultation">Iberiansun · Owner Partnerships</a></li>
+            <li><a href="contacto.html" data-i18n="nav_btn_request">Request a Service →</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span data-i18n="footer_rights">© 2026 Just Banús · Serinamar Group. Todos los derechos reservados. Marbella, Costa del Sol.</span>
+        <span data-i18n="footer_rights">© 2026 Just Banús · Part of Serinamar Group. All rights reserved. Marbella, Costa del Sol.</span>
+        <span>Real Estate · Hospitality · Property Services</span>
       </div>
     </div>
   </footer>
 
-  <script src="translations.js?v=4.0"></script>
-  <script src="script.js?v=8.0"></script>
+  <script src="translations.js?v=9.0"></script>
+  <script src="service-i18n.js?v=9.0"></script>
+  <script src="script.js?v=9.0"></script>
+  <!-- Floating WhatsApp Widget with pulsing badge & animation -->
+  <aside class="whatsapp-floating-widget" aria-label="WhatsApp Contact">
+    <a href="https://wa.me/34649743685?text=Hello%20Just%20Ban%C3%BAs%2C%20I%20would%20like%20to%20enquire%20about%20your%20property%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-btn" 
+       aria-label="Chat with Just Banús on WhatsApp (+34 649 743 685)"
+       title="Chat with Just Banús (+34 649 743 685)">
+      <span class="whatsapp-pulse"></span>
+      <span class="whatsapp-icon-wrap">
+        <svg viewBox="0 0 32 32" fill="none" class="whatsapp-svg" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.658.742 5.143 2.029 7.262L2.5 29.5l6.45-1.488A13.916 13.916 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Zm7.747 19.34c-.328.92-1.637 1.704-2.28 1.815-.62.106-1.41.15-2.279-.13a17.29 17.29 0 0 1-5.18-2.923 18.733 18.733 0 0 1-3.6-4.47c-.66-1.116-.035-2.18.347-2.732.22-.32.486-.403.652-.403.167 0 .332.002.476.01.15.006.354-.056.554.425.207.497 1.058 2.585 1.15 2.772.093.187.155.405.03.653-.124.248-.186.403-.372.62-.186.218-.393.488-.56.654-.187.187-.38.39-.164.764.217.373.966 1.593 2.072 2.578 1.424 1.267 2.624 1.66 2.997 1.846.373.187.59.156.808-.093.218-.249.932-1.087 1.18-1.46.25-.373.498-.31.838-.187.342.124 2.172 1.025 2.545 1.21.373.187.621.28.714.435.093.155.093.899-.235 1.82Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="whatsapp-label">
+        <span class="whatsapp-label-top" data-i18n="wa_quick_chat">WhatsApp · Marbella</span>
+        <strong class="whatsapp-label-phone">+34 649 743 685</strong>
+      </span>
+      <span class="whatsapp-online-dot" aria-hidden="true"></span>
+    </a>
+  </aside>
 </body>
 </html>

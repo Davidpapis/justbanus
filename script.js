@@ -2,14 +2,14 @@
    JUST BANÚS - SCRIPT ENGINE MULTI-PAGE & NAVIGATION CONTROLLER
    ========================================================================== */
 
-let currentLang = 'es';
+let currentLang = 'en';
 
 function setLanguage(lang) {
-  if (!['es', 'en'].includes(lang)) lang = 'es';
+  if (!['es', 'en'].includes(lang)) lang = 'en';
   currentLang = lang;
   
   try {
-    localStorage.setItem('justbanus_lang', lang);
+    localStorage.setItem('justbanus_lang_v2', lang);
   } catch (e) {
     console.warn('Storage not accessible:', e);
   }
@@ -148,7 +148,7 @@ function initNavigation() {
       }
     });
 
-    window.matchMedia('(min-width: 1101px)').addEventListener('change', (event) => {
+    window.matchMedia('(min-width: 1181px)').addEventListener('change', (event) => {
       if (event.matches) {
         const focusWasInDrawer = drawer.contains(document.activeElement);
         setOpen(false);
@@ -164,8 +164,11 @@ function initNavigation() {
     link.classList.remove('active');
     link.removeAttribute('aria-current');
     const href = link.getAttribute('href');
-    const cleanHref = href ? href.split('?')[0] : '';
-    if (cleanHref === path || (path.startsWith('servicios') && cleanHref === 'servicios.html')) {
+    const cleanHref = href ? href.split('?')[0].split('#')[0] : '';
+    if (cleanHref === path) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    } else if (path === 'servicios.html' && cleanHref === 'propietarios.html') {
       link.classList.add('active');
       link.setAttribute('aria-current', 'page');
     }
@@ -196,7 +199,6 @@ function initReveal() {
   }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
 
   items.forEach((item) => {
-    // Keep content already on screen visible, including the first paint.
     if (item.getBoundingClientRect().top < window.innerHeight) return;
     observer.observe(item);
     item.classList.add('reveal-pending');
@@ -211,44 +213,73 @@ function initReveal() {
 
 function initContactForm() {
   const form = document.getElementById('whatsapp-contact-form');
-  if (!form) return;
+  if (form) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
+      const values = new FormData(form);
+      const english = currentLang === 'en';
+      const service = form.elements.service?.selectedOptions[0]?.textContent.trim() || '';
+      const message = [
+        english ? 'Hello Just Banús, I would like to request a property service.' : 'Hola Just Banús, me gustaría solicitar un servicio para mi propiedad.',
+        '',
+        `${english ? 'Name' : 'Nombre'}: ${String(values.get('name')).trim()}`,
+        `${english ? 'Service' : 'Servicio'}: ${service}`,
+      ];
+      const email = String(values.get('email') || '').trim();
+      const phone = String(values.get('phone') || '').trim();
+      if (email) message.push(`Email: ${email}`);
+      if (phone) message.push(`${english ? 'Phone' : 'Teléfono'}: ${phone}`);
+      message.push('', String(values.get('text')).trim());
 
-    const values = new FormData(form);
-    const english = currentLang === 'en';
-    const service = form.elements.service.selectedOptions[0].textContent.trim();
-    const message = [
-      english ? 'Hello Just Banús, I would like to discuss my property.' : 'Hola Just Banús, me gustaría consultar sobre mi propiedad.',
-      '',
-      `${english ? 'Name' : 'Nombre'}: ${String(values.get('name')).trim()}`,
-      `${english ? 'Service' : 'Servicio'}: ${service}`,
-    ];
-    const email = String(values.get('email') || '').trim();
-    const phone = String(values.get('phone') || '').trim();
-    if (email) message.push(`Email: ${email}`);
-    if (phone) message.push(`${english ? 'Phone' : 'Teléfono'}: ${phone}`);
-    message.push('', String(values.get('text')).trim());
+      window.location.assign(`https://wa.me/34649743685?text=${encodeURIComponent(message.join('\n'))}`);
+    });
+  }
 
-    window.location.assign(`https://wa.me/34649743685?text=${encodeURIComponent(message.join('\n'))}`);
-  });
+  // Owner Consultation Form on Home Page (PDF page 8)
+  const consultForm = document.getElementById('owner-consultation-whatsapp-form');
+  if (consultForm) {
+    consultForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!consultForm.reportValidity()) return;
+
+      const values = new FormData(consultForm);
+      const english = currentLang === 'en';
+      const lines = [
+        english
+          ? 'Hello Just Banús / Serinamar Group, I would like to request an Owner Consultation.'
+          : 'Hola Just Banús / Serinamar Group, me gustaría solicitar una Consulta para Propietarios.',
+        '',
+        `${english ? 'Name' : 'Nombre'}: ${String(values.get('name') || '').trim()}`,
+        `Email: ${String(values.get('email') || '').trim()}`,
+        `${english ? 'Phone' : 'Teléfono'}: ${String(values.get('phone') || '').trim()}`,
+        `${english ? 'Property location' : 'Ubicación'}: ${String(values.get('location') || '').trim()}`,
+        `${english ? 'Property type' : 'Tipo de propiedad'}: ${String(values.get('property_type') || '').trim()}`,
+        `${english ? 'Number of bedrooms' : 'Dormitorios'}: ${String(values.get('bedrooms') || '').trim()}`
+      ];
+      const msg = String(values.get('message') || '').trim();
+      if (msg) {
+        lines.push('', `${english ? 'Message' : 'Mensaje'}: ${msg}`);
+      }
+
+      window.location.assign(`https://wa.me/34649743685?text=${encodeURIComponent(lines.join('\n'))}`);
+    });
+  }
 }
 
 window.addEventListener('scroll', () => {
-  const nav = document.querySelector('.navbar');
-  if (window.scrollY > 30) nav?.classList.add('scrolled');
-  else nav?.classList.remove('scrolled');
+  const headerWrap = document.querySelector('.site-header-wrap, .navbar');
+  if (window.scrollY > 30) headerWrap?.classList.add('scrolled');
+  else headerWrap?.classList.remove('scrolled');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Read saved language preference or default to Spanish
-  let savedLang = 'es';
+  let savedLang = 'en';
   try {
-    savedLang = localStorage.getItem('justbanus_lang') || 'es';
+    savedLang = localStorage.getItem('justbanus_lang_v2') || 'en';
   } catch (e) {
-    savedLang = 'es';
+    savedLang = 'en';
   }
 
   setLanguage(savedLang);
