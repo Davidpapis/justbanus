@@ -17,7 +17,7 @@ Object.assign(i18n.en, {
 
   // Hero (Inicio)
   jb_hero_eyebrow: 'PART OF SERINAMAR GROUP · MARBELLA',
-  jb_hero_title: 'JUST BANUS —<span>Property Management &amp; Property Services in Marbella.</span>',
+  jb_hero_title: '<span class="jb-hero-title-brand">JUST BANUS</span> —<span class="jb-hero-title-span">Property Management &amp; Property Services in Marbella.</span>',
   jb_hero_subtitle: 'Your property. Our responsibility.',
   jb_hero_lead: 'Dedicated local care, technical maintenance, cleaning, laundry and refurbishment for property owners across Marbella, Nueva Andalucía and Puerto Banús.',
   jb_hero_btn_services: 'OUR SERVICES',
@@ -170,7 +170,7 @@ Object.assign(i18n.es, {
 
   // Hero (Inicio)
   jb_hero_eyebrow: 'PARTE DE SERINAMAR GROUP · MARBELLA',
-  jb_hero_title: 'JUST BANUS —<span>Property Management &amp; Servicios para tu Propiedad en Marbella.</span>',
+  jb_hero_title: '<span class="jb-hero-title-brand">JUST BANUS</span> —<span class="jb-hero-title-span">Property Management &amp; Servicios para tu Propiedad en Marbella.</span>',
   jb_hero_subtitle: 'Tu propiedad. Nuestra responsabilidad.',
   jb_hero_lead: 'Cuidado local dedicado, mantenimiento técnico, limpieza, lavandería y reformas para propietarios en Marbella, Nueva Andalucía y Puerto Banús.',
   jb_hero_btn_services: 'NUESTROS SERVICIOS',
