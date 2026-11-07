@@ -275,11 +275,16 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  let savedLang = 'en';
+  let savedLang = null;
   try {
-    savedLang = localStorage.getItem('justbanus_lang_v2') || 'en';
+    savedLang = localStorage.getItem('justbanus_lang_v2');
   } catch (e) {
-    savedLang = 'en';
+    savedLang = null;
+  }
+
+  if (!savedLang || !['es', 'en'].includes(savedLang)) {
+    const navLang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    savedLang = navLang.toLowerCase().startsWith('es') ? 'es' : 'en';
   }
 
   setLanguage(savedLang);
