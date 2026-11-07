@@ -723,6 +723,8 @@ const i18n = {
 /* Shared Serinamar Group Navigation & Footer keys across all pages */
 Object.assign(i18n.en, {
   topbar_vision: 'Three specialised companies. One vision.',
+  topbar_sales: 'Serinamar · Real Estate Sales ↗',
+  topbar_iberiansun: 'Iberiansun · Non-resident, UK based & overseas clients',
   wa_quick_chat: 'WhatsApp · Online',
   topbar_holiday: 'Holiday Rentals (Naranjos de Marbella) ↗',
   nav_home: 'HOME',
@@ -739,7 +741,7 @@ Object.assign(i18n.en, {
   footer_group_title: 'Part of Serinamar Group',
   footer_group_vision: 'Three specialised companies. One vision.',
   footer_comp_serinamar: 'Real Estate & Hospitality',
-  footer_comp_iberiansun: 'Owner Rental Partnerships',
+  footer_comp_iberiansun: 'Non-resident, UK based & overseas clients',
   footer_comp_justbanus: 'Property Management & Property Services',
   footer_desc: '<strong>JUST BANUS · Property Management &amp; Property Services</strong><br>Your property. Our responsibility. Practical property management, cleaning &amp; laundry, maintenance and refurbishment in Marbella.',
   footer_services: 'Property Services',
@@ -751,6 +753,8 @@ Object.assign(i18n.en, {
 
 Object.assign(i18n.es, {
   topbar_vision: 'Tres empresas especializadas. Una misma visión.',
+  topbar_sales: 'Serinamar · Ventas Inmobiliarias ↗',
+  topbar_iberiansun: 'Iberiansun · Non-resident, UK based & overseas clients',
   wa_quick_chat: 'WhatsApp · En línea',
   topbar_holiday: 'Holiday Rentals · Alquiler Vacacional (Naranjos de Marbella) ↗',
   nav_home: 'INICIO',
@@ -767,7 +771,7 @@ Object.assign(i18n.es, {
   footer_group_title: 'Parte de Serinamar Group',
   footer_group_vision: 'Tres empresas especializadas. Una misma visión.',
   footer_comp_serinamar: 'Real Estate & Hospitality',
-  footer_comp_iberiansun: 'Owner Rental Partnerships',
+  footer_comp_iberiansun: 'Non-resident, UK based & overseas clients',
   footer_comp_justbanus: 'Property Management & Property Services',
   footer_desc: '<strong>JUST BANUS · Property Management &amp; Property Services</strong><br>Tu propiedad. Nuestra responsabilidad. Gestión práctica de propiedades, limpieza y lavandería, mantenimiento y reformas en Marbella.',
   footer_services: 'Servicios a la Propiedad',
